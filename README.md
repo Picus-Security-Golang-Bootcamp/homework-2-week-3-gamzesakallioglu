@@ -1,63 +1,20 @@
-## Homework | Week 3
-`Not: Ödevi yeni bir repoya ekleyeceksiniz. Var olan reponuzda bir güncelleme olmayacak. "homework-2..." şeklinde yeni bir repo üzerinde çalışacaksınız.`
+## BOOK ARCHIVE
 
+This app has 5 functionalities.
+ 
+ 1. List all the books
 
-Elimizde bir kitap listesi var. 
-Kitap alanları şöyle;
-```
-- Kitap ID
-- Kitap Adı
-- Sayfa Sayısı
-- Stok Sayısı
-- Fiyatı
-- Stock Kodu
-- ISBN
-- Yazar bilgisi (ID ve İsim)
-```
+ 2. Search a book name to see if it exists in the archive.
+ 
+ 3. Get the book with given id
 
-1. Tüm kitapları listele (list)
-2. Verilen girdi hangi kitap isimlerinde geçiyorsa o kitapları listele (search)
-3. ID'ye göre kitabı yazdır
-4. IDsi verilen kitabı sil. (Silinen kitabın ID'ye göre geliyor olması gerekiyor.)
-5. IDsi verilen kitabı istenilen adet kadar satın al ve kitabın son bilgilerini ekrana yazdır.
+ 3. Buy some amount of books
 
-Yanlış komut girildiğinde ekrana usage'ı yazdıracak. 
+ 4. Delete the book with given id
 
-
-Concurrency ile ilgili medium yazısı yazılacak. 
-
-### list command
-```
-go run main.go list
-```
-
-### search command 
-```
-go run main.go search <bookName>
-go run main.go search Lord of the Ring: The Return of the King
-```
-
-### get command
-```
-go run main.go get <bookID>
-go run main.go get 5
-```
-
-### delete command
-```
-go run main.go delete <bookID>
-go run main.go delete 5
-```
-
-### buy command
-```
-go run main.go buy <bookID> <quantity>
-go run main.go buy 5 2
-```
-
-###
-# Requirements:
-- README
-- No third party package(s)
-- Everything should be in English (Comments, Function names, File names, etc.)
-- Use structs not maps
+Use the arguments to make this app work.      
+Command **go run main.go list** to list all the books      
+Command **go run main.go typeYourBookName** to search 
+Command **go run main.go get IdNumber** to get the book with given id      
+Command **go run main.go buy IdNumber quantity** to buy some amount of the book with given id      
+Command **go run main.go delete IdNumber** to delete the book with given id 
