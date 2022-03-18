@@ -14,7 +14,7 @@ This app has 5 functionalities.
 
 Use the arguments to make this app work.      
 Command **go run main.go list** to list all the books      
-Command **go run main.go typeYourBookName** to search 
-Command **go run main.go get IdNumber** to get the book with given id      
-Command **go run main.go buy IdNumber quantity** to buy some amount of the book with given id      
-Command **go run main.go delete IdNumber** to delete the book with given id 
+Command **go run main.go typeYourBookName** to search         
+Command **go run main.go get IdNumber** to get the book with given id             
+Command **go run main.go buy IdNumber quantity** to buy some amount of the book with given id            
+Command **go run main.go delete IdNumber** to delete the book with given id          
