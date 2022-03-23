@@ -1,5 +1,8 @@
 ## BOOK ARCHIVE
 
+  The article I've written about Concurrency in Go https://medium.com/@gamzesakallioglu/concurrency-in-go-ea1187cf77b0
+       
+    
 This app has 5 functionalities.
  
  1. List all the books
