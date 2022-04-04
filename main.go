@@ -232,7 +232,7 @@ func main() {
 		case "search":
 			wordToSearch := ""
 			for _, v := range argumentsStringArray[1:] {
-				wordToSearch = wordToSearch + v
+				wordToSearch = wordToSearch + v + " "
 			}
 			searchCommand(listOfBooks, wordToSearch)
 		}
