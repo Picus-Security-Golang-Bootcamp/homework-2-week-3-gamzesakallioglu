@@ -195,7 +195,7 @@ func main() {
 	orderValid := checkIfOrderValid()
 	if orderValid {
 		// returns arguments slice from 1st index and arguments in the lower case string format
-		argumentsStringArray, argumentsString := readArguments()
+		argumentsStringArray, _ := readArguments()
 		switch argumentsStringArray[0] {
 		case "get":
 			// First, check if argument number is correct and arguments are int
@@ -229,8 +229,12 @@ func main() {
 			fmt.Println("--- LIST OF ALL BOOKS ---")
 			listCommand(listOfBooks)
 
-		default:
-			searchCommand(listOfBooks, argumentsString)
+		case "search":
+			wordToSearch := ""
+			for _, v := range argumentsStringArray[1:] {
+				wordToSearch = wordToSearch + v
+			}
+			searchCommand(listOfBooks, wordToSearch)
 		}
 	} else {
 		ordersNotValidM()
